@@ -1,5 +1,4 @@
 " Vundle stuff
-set rtp+=~/.vim/bundle/Vundle.vim
 set background=dark
 call plug#begin('~/.vim/bundle')
 Plug 'JamshedVesuna/vim-markdown-preview'
@@ -53,9 +52,9 @@ nmap ö ;
 nmap ä '
 nmap Ä "
 
-" nnoremap <ESC> :noh<CR><ESC>:<backspace>
-nnoremap <silent> <ESC> :noh<CR><ESC>
-" inoremap <ESC> <ESC>:noh<CR>:<backspace>
+if has('nvim')
+    nnoremap <silent> <ESC> :noh<CR><ESC>
+endif
 
 " Differnt Color for Line Numbers
 highlight LineNr ctermfg=grey
