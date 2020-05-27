@@ -7,6 +7,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
 Plug 'vim-airline/vim-airline'
 Plug 'lervag/vimtex'
+Plug 'lambdalisue/suda.vim'
 " Plug 'tmux-plugins/vim-tmux-focus-events'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'thinca/vim-localrc'
@@ -79,6 +80,8 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:airline_powerline_fonts = 1
 let g:airline_exclude_preview = 1
+" Edit with suda as soon as something is not writable
+let g:suda_smart_edit = 1
 if exists('&signcolumn')
     set signcolumn=yes
 else
